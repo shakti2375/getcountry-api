@@ -1,0 +1,31 @@
+FORMAT: 1A
+HOST: http://services.groupkt.com/
+
+# GetCountryAPI
+
+This is an API to fetch all the existing countries and individual countries by their alphanumeric 2 digit and 3 digit codes.
+
+## Country Collection [/country/get]
+
+### List All Countries [GET/country/get/all]
+
++ Response 200 (application/json)
+       
+        Data Returned Successfully
+       
+
+### Country by 2 character alphanumeric ISO code[GET/country/get/iso2code/{iso2_code}{?include,version,format}]
+
++ Parameters
+    + iso2_code(String)
+    + include: metadata (string, optional)
+    + format: xml (string, optional)
+
++ Response 200 (application/json)
+
+### Country by 3 character alphanumeric ISO code[GET/country/get/iso3code/{iso3_code}]
+
++ Parameters
+    + iso3_code(String)
+
++ Response 200 (application/json)
