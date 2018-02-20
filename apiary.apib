@@ -10,9 +10,12 @@ This is an API to fetch all the existing countries and individual countries by t
 ### List All Countries [GET/country/get/all]
 
 + Response 200 (application/json)
-       
-        Data Returned Successfully
-       
+
+          {
+            "country": "INDIA",
+            "iso2code" :"IN",
+            "iso3code": "IND"
+          }
 
 ### Country by 2 character alphanumeric ISO code[GET/country/get/iso2code/{iso2_code}{?include,version,format}]
 
